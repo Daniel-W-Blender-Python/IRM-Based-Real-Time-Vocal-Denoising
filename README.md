@@ -1,13 +1,4 @@
-# IRM-Based Real-Time Denoiser
-A very light-weight machine learning model that suppresses background noise from vocals using Python.
+# IRM-Based Real-Time Vocal Denoising
+My real-time approach to vocal denoising uses an ideal ratio mask (IRM) to efficiently predict clean speech. With a 4 ms frame duration and an average of 2.3 ms of inference time, the model can run live on a total latency of less than 6.5 ms.
 
-Being a one-dimensional model, this tool is meant more for noise reduction as opposed to full noise removal. The one-dimensional nature of this model only allows it to alter the frequency levels, acting as an advanced equalizing curve that targets areas of high background noise.
-
-![image](https://github.com/user-attachments/assets/1900827f-92d7-4db8-80ec-c00601ff07fb)
-
-An EQ curve like this is similar to the one applied by the noise reduction model. Likely, further equalizing to boost the higher frequencies will need to be applied to create a more natural-sounding recording.
-
-# How to Use
-```
-python denoise_audio.py input.wav output.wav
-```
+In this repository, I provide the training script + inference script for the model as well as a live VST plugin for use in a DAW. 
