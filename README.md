@@ -14,9 +14,10 @@ tqdm
 
 # Training
 
-In training the model, I converted the dataset to an npz file where each audio segment is one second long. The datasets I used include the Saraga Carnatic Music 137
+In training the model, I converted the dataset to an npz file where each audio segment is one second long. The datasets I used include the Saraga Carnatic Music 
 Dataset, CommonVoice, Noisy Speech Database, GTSinger, SingingDatabase, VocalSet, and the Acapella Mandarin Singing Dataset.
 
+```bash
 python train.py \
     --clean_npz  /data/clean_50k.npz \
     --noise_dir  /data/noise \
@@ -24,6 +25,7 @@ python train.py \
     --epochs     200 \
     --batch_size 32 \
     --lr         5e-5
+```
 
 # Inference
 
