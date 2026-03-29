@@ -29,19 +29,23 @@ python train.py \
 
 # Inference
 
-# Single file
+Single file
+```bash
 python infer.py \
     --model       irm_denoiser.keras \
     --global_mean 0.0312 \
     --input       noisy.wav \
     --output      denoised.wav
+```
 
-# Batch (directory)
+Batch (directory)
+```bash
 python infer.py \
     --model       irm_denoiser.keras \
     --global_mean 0.0312 \
     --input       audio/*.wav \
     --output_dir  denoised/
+```
 
 # VST Plugin
 
