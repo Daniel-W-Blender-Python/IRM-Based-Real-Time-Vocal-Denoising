@@ -5,12 +5,13 @@ My real-time approach to vocal denoising uses an ideal ratio mask (IRM) to effic
 In this repository, I provide the training script + inference script for the model as well as a live VST plugin for use in a DAW. 
 
 # Requirements
-
+```bash
 tensorflow >= 2.12
 librosa
 soundfile
 numpy
 tqdm
+```
 
 # Training
 
