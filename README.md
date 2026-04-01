@@ -1,4 +1,4 @@
-https://arxiv.org/pdf/2603.29326
+https://arxiv.org/abs/2603.29326
 
 # IRM-Based Real-Time Vocal Denoising
 
